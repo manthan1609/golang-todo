@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"time"
 
 	"github.com/thedevsaddam/renderer"
@@ -47,7 +48,9 @@ func init()  {
 }
 
 func checkErr(err error)  {
-	
+	if err!=nil {
+		log.Fatal(err)
+	}
 }
 
 func main() {
